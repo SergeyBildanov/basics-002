@@ -15,8 +15,8 @@ class Student extends Model
         'created_at',
         'upadeted_at',
     ];
-    public function getGroup(){
-        return $this->hasOne(Group::class, 'id', 'group_id');
+    public function group(){
+        return $this->belongsTo(Group::class);
     }
     use HasFactory;
 }

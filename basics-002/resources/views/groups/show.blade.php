@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="students/create/">Добавить студента</a>
+    <a href="{{$group->id}}/students/create/">Добавить студента</a>
     <table>
         <thead>
             <th scope="col">id</th>
@@ -37,13 +37,13 @@
         <tbody>
             @foreach($students as $student)
                     <tr>
-                        <td><a href="students/{{$student->id}}/">{{$student->id}}</a></td>
+                        <td><a href="{{$group->id}}/students/{{$student->id}}">{{$student->id}}</a></td>
                         <td>{{$student->surname}}</td>
                         <td>{{$student->name}}</td>
                     </tr>
             @endforeach
         </tbody>
     </table>
-    <a href="/groups/">Назад</a>
+    <a href="/groups">Назад</a>
 </body>
 </html>

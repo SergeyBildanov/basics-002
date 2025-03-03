@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/groups/{{$student->group_id}}/">Назад</a>
+    <a href="/groups/{{$student->group_id}}">Назад</a>
     <table>
         <thead>
             <th scope="col">id</th>

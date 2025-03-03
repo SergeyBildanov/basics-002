@@ -33,10 +33,9 @@ class StudentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, int $group_id)
     {
         $path = $request->path();
-        $group_id = (int) explode('/',$path)[1];
         $surname = $request->input('surname');
         $name = $request->input('name');
         $created_at = date('Y-m-d H:i:s');
@@ -49,7 +48,7 @@ class StudentController extends Controller
             'created_at' => $created_at,
             'updated_at' => $updated_at
         ]);
-        return redirect("/groups/$group_id/");
+        return redirect("/groups/$group_id");
     }
 
     /**

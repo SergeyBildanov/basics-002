@@ -17,7 +17,7 @@
         <tbody>
             @foreach($groups as $group)
                     <tr>
-                        <td><a href="/groups/{{$group->id}}/">{{$group->id}}</a></td>
+                        <td><a href="/groups/{{$group->id}}">{{$group->id}}</a></td>
                         <td>{{$group->title}}</td>
                         <td>{{$group->start_from}}</td>
                         <td>{{$group->is_active}}</td>

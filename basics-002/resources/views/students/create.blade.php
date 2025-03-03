@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="../students" class="group-create" method="POST">
+    <a href="../../">Назад</a>
+    <form action="../" class="group-create" method="POST">
         @csrf
         <div class="field">
             <label for="surname">Фамилия студента</label>
