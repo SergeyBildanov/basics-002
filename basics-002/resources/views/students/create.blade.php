@@ -7,7 +7,7 @@
 </head>
 <body>
     <a href="../../">Назад</a>
-    <form action="../" class="group-create" method="POST">
+    <form action="../" class="student-create" method="POST">
         @csrf
         <div class="field">
             <label for="surname">Фамилия студента</label>
@@ -23,4 +23,12 @@
         </div>
     </form>
 </body>
+<script>
+    let clearButton = document.querySelector(".clear");
+    let form = document.querySelector(".student-create");
+    clearButton.addEventListener("click", (e)=>{
+        e.preventDefault()
+        form.reset();
+    })
+</script>
 </html>

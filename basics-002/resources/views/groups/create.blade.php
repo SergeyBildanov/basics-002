@@ -27,4 +27,12 @@
         </div>
     </form>
 </body>
+<script>
+    let clearButton = document.querySelector(".clear");
+    let form = document.querySelector(".group-create");
+    clearButton.addEventListener("click", (e)=>{
+        e.preventDefault()
+        form.reset();
+    })
+</script>
 </html>
